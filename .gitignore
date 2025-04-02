@@ -1,0 +1,36 @@
+# ROS 2 specific
+**/build/
+**/install/
+**/log/
+
+# ROS 2 workspace
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+CMakeLists.txt.user
+CMakeCache.txt
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependency directories
+/devel/
+/build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# catkin-generated files
+catkin_make/
+
+# Debug/Release directories
+/build-debug/
+/build-release/
+
+# ROS 2 dependencies (added by rosdep)
+/install/

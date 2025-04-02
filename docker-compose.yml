@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  ros2:
+    image: ros2_vnc
+    container_name: ros2_vnc_container
+    network_mode: host
+    environment:
+      - DISPLAY=:1
+      - VNC_PASSWORD=vncpassword
+    ports:
+      - "5901:5901"  # Expose VNC port
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    volumes:
+      - /home/tpi/ros_2/ws:/root/ros2_ws
